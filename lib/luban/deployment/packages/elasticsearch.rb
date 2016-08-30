@@ -1,0 +1,6 @@
+require 'luban'
+require_relative 'elasticsearch/base'
+require_relative 'elasticsearch/installer'
+require_relative 'elasticsearch/controller'
+require_relative 'elasticsearch/configurator'
+require_relative 'elasticsearch/version'
