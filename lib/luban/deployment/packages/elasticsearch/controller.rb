@@ -8,8 +8,8 @@ module Luban
               base.define_executable 'elasticsearch'
             end
 
-            def java_home_path
-              @java_home_path ||= readlink(app_path.join('java'))
+            def java_bin_path
+              @java_bin_path ||= package_bin_path('java')
             end
 
             def process_pattern
@@ -17,7 +17,7 @@ module Luban
             end
 
             def start_command
-              @start_command ||= "#{elasticsearch_executable} -d -p #{pid_file_path} --path.conf=#{profile_path}"
+              @start_command ||= "PATH=#{java_bin_path}:$PATH #{elasticsearch_executable} -d -p #{pid_file_path} --path.conf=#{profile_path}"
             end
 
             def stop_command
