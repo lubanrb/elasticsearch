@@ -17,11 +17,11 @@ module Luban
             end
 
             def start_command
-              @start_command ||= "PATH=#{java_bin_path}:$PATH #{elasticsearch_executable} -d -p #{pid_file_path} --path.conf=#{profile_path}"
+              @start_command ||= shell_command("PATH=#{java_bin_path}:$PATH #{elasticsearch_executable} -d -p #{pid_file_path} --path.conf=#{profile_path}")
             end
 
             def stop_command
-              @stop_command ||= "kill $(cat #{pid_file_path} 2>/dev/null)"
+              @stop_command ||= shell_command("kill $(cat #{pid_file_path} 2>/dev/null)")
             end
           end
 
