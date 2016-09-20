@@ -1,5 +1,11 @@
 # Change log
 
+## Version 0.1.2 (Sept 20, 2016)
+
+Minor enhancements:
+  * Refactored the way of composing shell commands
+    * As a result, bumped up the gem dependency on Luban to version 0.8.0
+
 ## Version 0.1.1 (Aug 31, 2016)
 
 Minor enhancements:
