@@ -1,5 +1,12 @@
 # Change log
 
+## Version 0.1.3 (Oct 12, 2016)
+
+Minor enhancements:
+  * Set up FileAppender instead of DailyRollingFileAppender in logging.yml of Elasticsearch
+  * Added logrotate configuration for Elasticsearch
+  * Bump up gem dependency of Luban to version 0.9.0
+
 ## Version 0.1.2 (Sept 20, 2016)
 
 Minor enhancements:
