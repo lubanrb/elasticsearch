@@ -1,5 +1,10 @@
 # Change log
 
+## Version 0.1.4 (Oct 17, 2016)
+
+Bug fixes:
+  * Corrected the logrotate template file name
+
 ## Version 0.1.3 (Oct 12, 2016)
 
 Minor enhancements:
