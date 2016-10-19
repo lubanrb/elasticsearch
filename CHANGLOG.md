@@ -1,5 +1,12 @@
 # Change log
 
+## Version 0.1.5 (Oct 19, 2016)
+
+Minor enhancements:
+  * Created symlinks for log_path to elasticsearch logs
+  * Utilized new parameters, #logrotate_max_age, #logrotate_count, from Luban to unify logrotate setup
+  * Bump up gem dependency of Luban to version 0.9.8
+
 ## Version 0.1.4 (Oct 17, 2016)
 
 Bug fixes:
