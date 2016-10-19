@@ -23,7 +23,6 @@ module Luban
 
           def init
             super
-            linked_dirs.delete('log')
             linked_dirs.push('data', 'logs')
             linked_files.push('elasticsearch.yml', 'logging.yml')
           end
@@ -33,6 +32,11 @@ module Luban
             within install_path do
               execute(:mv, build_path.join('*'), '.', ">> #{install_log_file_path} 2>&1")
             end
+          end
+
+          def create_symlinks!
+            super
+            assure_symlink(log_path, install_path.join('logs'))
           end
         end
       end

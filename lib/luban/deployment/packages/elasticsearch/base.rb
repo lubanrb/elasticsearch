@@ -10,11 +10,6 @@ module Luban
           def data_path
             @data_path ||= shared_path.join('data')
           end
-
-          def log_path
-            @log_path ||= shared_path.join('logs')
-          end
-          alias_method :logs_path, :log_path
         end
 
         module Parameters
