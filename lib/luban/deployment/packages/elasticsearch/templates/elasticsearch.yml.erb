@@ -51,7 +51,7 @@ bootstrap.mlockall: true
 #
 # Set the bind address to a specific IP (IPv4 or IPv6):
 #
-# network.host: 192.168.0.1
+network.host: [<%= network_host %>, _local_]
 #
 # Set a custom port for HTTP:
 #
