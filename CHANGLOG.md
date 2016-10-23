@@ -1,5 +1,12 @@
 # Change log
 
+## Version 0.1.6 (Oct 23, 2016)
+
+Minor enhancements:
+  * Added a new parameter, #network_host, in Elasticsearch configuration
+  * Cleaned up the design and implementation of app parameters in a deployment project
+    * As a result, bump up gem dependency on Luban to version 0.9.10
+
 ## Version 0.1.5 (Oct 19, 2016)
 
 Minor enhancements:
