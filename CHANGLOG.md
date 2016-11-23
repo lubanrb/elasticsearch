@@ -1,5 +1,11 @@
 # Change log
 
+## Version 0.1.7 (Nov 24, 2016)
+
+* Made use of linked_files convention
+    * Relocated elasticsearch.yml.erb and logging.yml to templates/config
+    * As a result, bump up gem dependency of Luban to version 0.10.4
+
 ## Version 0.1.6 (Oct 23, 2016)
 
 Minor enhancements:
