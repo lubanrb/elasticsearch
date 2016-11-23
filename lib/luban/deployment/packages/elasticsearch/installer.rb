@@ -24,7 +24,6 @@ module Luban
           def init
             super
             linked_dirs.push('data', 'logs')
-            linked_files.push('elasticsearch.yml', 'logging.yml')
           end
 
           def build_package
