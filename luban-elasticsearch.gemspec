@@ -5,7 +5,7 @@ require 'luban/deployment/packages/elasticsearch/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "luban-elasticsearch"
-  spec.version       = Luban::Deployment::Packages::Elasticsearch::VERSION
+  spec.version       = Luban::Deployment::Packages::ELASTICSEARCH_VERSION
   spec.authors       = ["Rubyist Chi"]
   spec.email         = ["rubyist.chi@gmail.com"]
 
