@@ -3,6 +3,8 @@ module Luban
     module Packages
       class Elasticsearch < Luban::Deployment::Service::Base
         module Paths
+          def control_file_dir; @control_file_dir ||= "config"; end
+
           def control_file_name
             @control_file_name ||= "#{service_name}.yml"
           end
