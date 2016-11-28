@@ -1,5 +1,10 @@
 # Change log
 
+## Version 0.1.9 (Nov 28, 2016)
+
+Bug fixes:
+  * Provided the correct control path to start command for Elasticsearch
+
 ## Version 0.1.8 (Nov 27, 2016)
 
 Minor enhancements:
