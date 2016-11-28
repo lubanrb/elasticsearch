@@ -13,11 +13,11 @@ module Luban
             end
 
             def process_pattern
-              @process_pattern ||= "#{profile_path}$"
+              @process_pattern ||= "#{control_path}$"
             end
 
             def start_command
-              @start_command ||= shell_command("PATH=#{java_bin_path}:$PATH #{elasticsearch_executable} -d -p #{pid_file_path} --path.conf=#{profile_path}")
+              @start_command ||= shell_command("PATH=#{java_bin_path}:$PATH #{elasticsearch_executable} -d -p #{pid_file_path} --path.conf=#{control_path}")
             end
 
             def stop_command

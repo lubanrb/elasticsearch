@@ -5,6 +5,8 @@ module Luban
         module Paths
           def control_file_dir; @control_file_dir ||= "config"; end
 
+          def control_path; @control_path ||= profile_path.join(control_file_dir); end
+
           def control_file_name
             @control_file_name ||= "#{service_name}.yml"
           end
