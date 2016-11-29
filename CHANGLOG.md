@@ -1,6 +1,15 @@
 # Change log
 
-## Version 0.1.9 (Nov 28, 2016)
+## Version 0.1.10 (Nov 29, 2016)
+
+Minor enhancements:
+  * Refactored #control_path to gem luban
+    * As a result, bump up gem dependency of luban to version 0.10.10
+
+Bug fixes:
+  * Cleaned up install path before installation
+
+## Version 0.1.9 (Nov 29, 2016)
 
 Bug fixes:
   * Provided the correct control path to start command for Elasticsearch
