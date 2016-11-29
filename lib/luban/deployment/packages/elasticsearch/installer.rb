@@ -29,6 +29,7 @@ module Luban
           def build_package
             info "Building #{package_full_name}"
             within install_path do
+              rm('-r', '*') # Clean up install path
               execute(:mv, build_path.join('*'), '.', ">> #{install_log_file_path} 2>&1")
             end
           end
